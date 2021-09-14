@@ -37,7 +37,7 @@ namespace Voltemplate.Interactions
             ).Where(x => x != null).ToArray();
 
 
-        public static ApplicationCommandOptionData GetOptio(this SocketSlashCommandDataOption dataOpt, string name)
+        public static ApplicationCommandOptionData GetOption(this SocketSlashCommandDataOption dataOpt, string name)
             => dataOpt.GetOptions()[name];
 
         public static SafeDictionary<string, ApplicationCommandOptionData> GetOptions(
