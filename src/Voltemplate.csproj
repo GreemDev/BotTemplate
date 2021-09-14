@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <StartupObject>Voltemplate.Bot</StartupObject>
+        <RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
+        <Authors>your name here! all it takes is a few keystrokes</Authors>
+        <Version>-1</Version>
+        <Platforms>AnyCPU;x64</Platforms>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="..\build.sh" Link="attr/Build Script" />
+        <None Include="..\.gitignore" Link="attr/Gitignore" />
+        
+        <PackageReference Include="Colorful.Console" Version="1.2.15" />
+        <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+        <PackageReference Include="Discord.Net.Labs.WebSocket" Version="3.0.2" />
+        <PackageReference Include="Gommon" Version="1.4.2" />
+        <PackageReference Include="Humanizer.Core" Version="2.11.10" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0-preview.7.21377.19" />
+    </ItemGroup>
+
+</Project>
